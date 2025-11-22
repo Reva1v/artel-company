@@ -1,4 +1,5 @@
 import {ImageWithFallback} from './figma/ImageWithFallback';
+import {useState} from "react";
 
 const kitchenServices = [
     {
@@ -33,7 +34,17 @@ const kitchenServices = [
     }
 ];
 
+
 export function KitchenDesign() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+            setIsMenuOpen(false);
+        }
+    };
     return (
         <section id="kitchen-design" className="py-20 px-6 bg-[#F5F2ED]">
             <div className="max-w-7xl mx-auto">
@@ -65,8 +76,8 @@ export function KitchenDesign() {
                             </p>
 
                             {/* Link */}
-                            <div
-                                className="text-[#3D4436] font-medium border-b border-[#3D4436] w-fit pb-0.5 hover:opacity-70 transition-opacity">
+                            <div onClick={() => scrollToSection('contact')}
+                                 className="text-[#3D4436] font-medium border-b border-[#3D4436] w-fit pb-0.5 hover:opacity-70 transition-opacity">
                                 Learn more
                             </div>
                         </div>
