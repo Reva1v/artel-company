@@ -1,5 +1,6 @@
 import { Hero } from './components/Hero';
 import { Gallery } from './components/Gallery';
+import { KitchenDesign } from "./components/KitchenDesign";
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Process } from './components/Process';
 import { About } from './components/About';
@@ -13,6 +14,7 @@ export default function App() {
       <Navigation />
       <Hero />
       <Gallery />
+      <KitchenDesign />
       <WhyChooseUs />
       <Process />
       <About />
