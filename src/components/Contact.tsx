@@ -76,10 +76,12 @@ export function Contact() {
         <section id="contact" className="py-20 px-6 bg-[#F5F2ED]">
             <div className="max-w-7xl mx-auto">
                 {/* ... (Верхняя часть с заголовками и калькулятором без изменений) ... */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-6">
                     <h2 className="text-[#3D4436] mb-4">Get Your Free Consultation</h2>
                     <p className="text-[#6B7562] max-w-2xl mx-auto">
-                        Ready to transform your space? Use our estimator below or contact us directly.
+                        For each of our customer, we offer a complimentary reading of the subtle energies that shape the
+                        spirit of their living space. <br/> The design of the art piece will arise from these insights,
+                        reflecting the unique character and harmony discovered within the home.
                     </p>
                 </div>
 
@@ -245,8 +247,8 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <div className="text-[#6B7562] mb-1">Phone</div>
-                                        <div className="text-[#3D4436]">+1 (720) 555-ARTEL</div>
-                                        <div className="text-[#3D4436]">+1 (720) 555-2783</div>
+                                        <div className="text-[#3D4436]">(303) 931 9010</div>
+                                        <div className="text-[#3D4436]">(347) 234 7350</div>
                                     </div>
                                 </div>
 
@@ -257,8 +259,8 @@ export function Contact() {
                                     </div>
                                     <div>
                                         <div className="text-[#6B7562] mb-1">Email</div>
-                                        <div className="text-[#3D4436]">info@arteldenver.com</div>
-                                        <div className="text-[#3D4436]">projects@arteldenver.com</div>
+                                        <div className="text-[#3D4436]">artelaccentwalls@gmail.com</div>
+                                        {/*<div className="text-[#3D4436]">projects@arteldenver.com</div>*/}
                                     </div>
                                 </div>
 
