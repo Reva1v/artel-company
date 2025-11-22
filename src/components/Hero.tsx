@@ -56,7 +56,7 @@ export function Hero() {
             Get Free Consultation
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
-          <Button size="lg" variant="outline" onClick={scrollToGallery} className="border-white text-white hover:bg-white hover:text-black">
+          <Button size="lg" variant="outline" onClick={scrollToGallery} className="border-white hover:bg-white hover:text-black">
             View Portfolio
           </Button>
         </div>

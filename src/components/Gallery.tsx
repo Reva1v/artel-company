@@ -107,7 +107,7 @@ export function Gallery() {
             {/* Navigation Buttons */}
             <button
               onClick={handlePrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-[#8A9A7B]/20 rounded-full shadow-lg flex items-center justify-center hover:bg-[#8A9A7B] hover:text-white transition-all -translate-x-1/2 md:-translate-x-full cursor-pointer"
+              className="absolute left-[35px] sm:left-[50px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-[#8A9A7B]/20 rounded-full shadow-lg flex items-center justify-center hover:bg-[#8A9A7B] hover:text-white transition-all -translate-x-1/2 md:-translate-x-full cursor-pointer"
               aria-label="Previous"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -115,7 +115,7 @@ export function Gallery() {
 
             <button
               onClick={handleNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-[#8A9A7B]/20 rounded-full shadow-lg flex items-center justify-center hover:bg-[#8A9A7B] hover:text-white transition-all translate-x-1/2 md:translate-x-full cursor-pointer"
+              className="absolute right-[35px] sm:right-[50px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-[#8A9A7B]/20 rounded-full shadow-lg flex items-center justify-center hover:bg-[#8A9A7B] hover:text-white transition-all translate-x-1/2 md:translate-x-full cursor-pointer"
               aria-label="Next"
             >
               <ChevronRight className="w-6 h-6" />

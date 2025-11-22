@@ -59,7 +59,7 @@ export function KitchenDesign() {
                     {kitchenServices.map((item, index) => (
                         <div key={index} className="group cursor-pointer flex flex-col">
                             <div
-                                className="aspect-[4/5] w-full overflow-hidden rounded-lg mb-6 bg-[#F5F2ED]"
+                                className=" w-full overflow-hidden rounded-lg mb-6 bg-[#F5F2ED]"
                                 style={{height: '500px'}}
                             >
                                 <ImageWithFallback
