@@ -5,13 +5,15 @@ import {Calculator, Hammer, Loader2, Mail, MapPin, Phone, Ruler} from 'lucide-re
 import React, {useState} from 'react';
 
 // Типы для материалов и цен
-type MaterialType = 'MDF' | 'Hardwood' | 'Slat Wall' | 'Custom Design';
+type MaterialType = 'Accent Walls' | 'Fireplace Build-Outs' | 'Media Walls' | 'Decorative Ceilings' | 'Bedwall Design' | 'Kitchen Design';
 
 const PRICING: Record<MaterialType, number> = {
-    'MDF': 18,
-    'Hardwood': 25,
-    'Slat Wall': 30,
-    'Custom Design': 40,
+    'Accent Walls': 18,
+    'Fireplace Build-Outs': 25,
+    'Media Walls': 30,
+    'Decorative Ceilings': 40,
+    'Bedwall Design': 22,
+    'Kitchen Design': 35,
 };
 
 export function Contact() {
@@ -28,7 +30,7 @@ export function Contact() {
 
     // Состояние для калькулятора
     const [dimensions, setDimensions] = useState({length: '', width: ''});
-    const [material, setMaterial] = useState<MaterialType>('MDF');
+    const [material, setMaterial] = useState<MaterialType>('Accent Walls');
 
     // Логика расчета
     const length = parseFloat(dimensions.length) || 0;
@@ -128,7 +130,7 @@ export function Contact() {
                             {/* Material Select */}
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-[#3D4436] flex items-center gap-2">
-                                    <Hammer className="w-4 h-4"/> Material
+                                    <Hammer className="w-4 h-4"/> Services
                                 </label>
                                 <select
                                     value={material}
@@ -151,7 +153,7 @@ export function Contact() {
                             </div>
 
                             <div className="text-center md:text-left">
-                                <div className="text-xs text-[#6B7562] uppercase tracking-wide">Material Price</div>
+                                <div className="text-xs text-[#6B7562] uppercase tracking-wide">Average price</div>
                                 <div className="text-xl font-semibold text-[#3D4436]">${pricePerSqFt} / sq ft</div>
                             </div>
 
@@ -172,9 +174,10 @@ export function Contact() {
                 </div>
 
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Contact Form */}
                     <div>
+                        <h3 className="text-[#3D4436] mb-6">Get Free Consultation</h3>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <Input

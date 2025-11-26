@@ -28,8 +28,8 @@ const kitchenServices = [
         image: 'https://i.gyazo.com/1db8cb84aa63f82484dfca13abfa37d9.jpg',
     },
     {
-        title: 'Premium Flooring',
-        description: 'Durable and stylish flooring options including hardwood, natural stone, and porcelain tile that set the foundation for your kitchen\'s aesthetic.',
+        title: 'Kitchen Design',
+        description: 'Elevate your culinary experience with our premium kitchen design and installation services.',
         image: 'https://i.gyazo.com/7fde690eb7db4b69867a6518c34a971c.jpg',
     }
 ];
@@ -46,13 +46,10 @@ export function KitchenDesign() {
         }
     };
     return (
-        <section id="kitchen-design" className="py-20 px-6 bg-[#F5F2ED]">
+        <section id="services" className="py-20 px-6 bg-[#F5F2ED]">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-[#3D4436] mb-4">Kitchen Design</h2>
-                    <p className="text-[#6B7562] max-w-2xl mx-auto">
-                        Elevate your culinary experience with our premium kitchen design and installation services.
-                    </p>
+                    <h2 className="text-[#3D4436] mb-4">Services</h2>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
