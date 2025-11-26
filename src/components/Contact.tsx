@@ -177,7 +177,7 @@ export function Contact() {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Contact Form */}
                     <div>
-                        <h3 className="text-[#3D4436] mb-6">Get Free Consultation</h3>
+                        <h3 className="text-[#3D4436] mb-6 text-center">Get Free Consultation</h3>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <Input
@@ -241,7 +241,7 @@ export function Contact() {
                     <div className="space-y-8">
                         {/* ... (Остальная часть компонента без изменений) ... */}
                         <div>
-                            <h3 className="text-[#3D4436] mb-6">Contact Information</h3>
+                            <h3 className="text-[#3D4436] mb-6 text-center">Contact Information</h3>
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
                                     <div
